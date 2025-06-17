@@ -1,38 +1,372 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset básico e fonte padrão */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.02rem;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+
+/* HEADER - Topo da página */
+header {
+  background-color: #f9f9fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Corrige caso os itens não caibam em telas menores */
 }
-.content {
-    max-width: 1440px;
-    margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+/* LOGO - Parte esquerda do header */
+.logo {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+
+/* Ícone do logo */
+#icone-logo {
+  font-size: 5.5rem;
+  color: #555555;
+  transform: rotate(-15deg);
 }
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #555555;
+
+  line-height: -1.2; /* Ajusta o espaçamento entre linhas */
 }
+
+/* BARRA DE PESQUISA - Parte direita do header */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px; /* Limita o tamanho máximo em telas grandes */
+  flex-wrap: wrap; /* Faz os elementos quebrarem em telas menores */
+}
+
+.search input {
+  flex: 1 1 200px; /* Faz o input se ajustar melhor */
+  padding: 0.5rem;
+  border: solid 1px #cdcdcd;
+  border-radius: 5px;
+  min-width: 150px; /* Não deixa o campo sumir no mobile */
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #555555;
+}
+
+.search input::placeholder {
+  color: #555555;
+}
+
+.search button {
+  background-color: #555555;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  min-width: 100px; /* Garante que o botão não fique pequeno demais */
+}
+
+.search button:hover {
+  background-color: #444444;
+}
+
+.search button:active {
+  background-color: #333333;
+}
+
+/* LINKS */
+a {
+  color: rgb(97, 101, 107);
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+a:active {
+  color: #000070;
+}
+
+#link-imdb,
+#link-amazon {
+  color: #667dff;
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+#link-imdb:hover,
+#link-amazon:hover {
+  color: #4040ff;
+  text-decoration: underline;
+}
+
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #555555;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+.logo-text:hover {
+  color: #555555;
+  text-decoration: none;
+}
+
+/* LISTAS */
+ul {
+  list-style: none;
+  padding-left: 5px;
+  margin-bottom: 1rem;
+}
+
+/* SIDEBAR - Navegação lateral esquerda */
 .sidebar {
-    border-right: solid 1px #cdcdcd;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #eeeeee;
+  padding: 0rem 1rem;
 }
+
+.sidebar h2 {
+  font-size: 1.6rem;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+/* NAV BAR */
+.bar {
+  background-color: #f9f9fb;
+  padding: 1rem;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+}
+
+/* GRID PRINCIPAL - Área central da página */
+.content {
+  max-width: 1440px;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: 250px 1fr; /* Melhor controle de largura fixa e fluida */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    display: block; /* Empilha sidebar e main no mobile */
+    padding: 0.5rem;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/* TÍTULOS */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  border-bottom: solid 1px #bbbbbb;
+}
+
+main h2 {
+  color: #383838;
+}
+
+/* SEÇÕES */
+section {
+  margin-bottom: 2.5rem;
+}
+
+/* SOBRE - Parte de texto + imagem */
+.paragrafo-sobre {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.paragrafo-sobre img {
+  margin-top: 1rem;
+  padding: 1rem 0rem;
+  border-radius: 5px;
+  max-width: 100%; /* Imagem sempre se adapta ao tamanho da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Garante que a imagem não fique inline */
+  float: none; /* Tira o float pra evitar quebra */
+}
+
+/* FIGURE - Box lateral de informações gerais */
+.p-img-sobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; /* Faz os itens quebrarem no mobile */
+}
+
+@media screen and (max-width: 768px) {
+  .p-img-sobre {
+    flex-direction: column; /* Empilha no mobile */
+  }
+}
+
 figure {
-    text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 100%; /* Faz o figure ocupar o espaço correto em telas pequenas */
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Coloca o conteúdo em coluna */
+  margin: 1rem auto; /* Centraliza o figure */
+}
+
+figure h3,
+figure h4 {
+  background-color: #bfc7d6;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0.5rem 0;
+}
+
+.img-sobre {
+  margin: 0.7rem 0 0 0;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  display: block; /* Garante que a imagem não fique inline */
+  float: none; /* Tira o float pra evitar quebra */
+  margin: auto; /* Centraliza a imagem */
+}
+
+figcaption {
+  padding-bottom: 1rem;
+}
+
+figcaption p {
+  text-align: left;
+  margin: 0.1rem 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* MAIN - Área principal */
+section#personagens article {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr; /* Uma coluna por padrão */
+  grid-template-rows: auto;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: auto;
+}
+
+section#personagens h3 {
+  font-size: 1.4rem;
+  margin: auto;
+}
+
+section#personagens p {
+  margin: 0.5rem 0rem;
+  word-wrap: break-word;
+  background-color: #f9f9fb; /* Fundo claro para destacar o texto */
+  border: solid 1px #cdcdcd; /* Borda sutil para destacar o parágrafo */
+  border-radius: 10px; /* Borda arredondada */
+  padding: 0.6rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+}
+
+section#personagens strong {
+  font-weight: bold;
+  color: #353535;
+}
+
+section#personagens img {
+  width: 100%;
+  max-width: 350px;
+  /* display: flex;
+  justify-content: center; */
+  /* margin: 0rem 1rem 1rem 0rem; */
+  padding: 0.8rem 0rem 0.8rem 0rem;
+  float: none; /* Tira o float pra evitar quebra */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: auto;
+}
+
+section#personagens .gda {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* ANCHORS - Navegação lateral direita */
+.anchors {
+  border-left: solid 1px #cdcdcd;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .anchors {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    border-top: solid 1px #cdcdcd;
+  }
+}
+
+.anchors h2 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.anchors ul li {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER - Rodapé */
+.footer {
+  border-top: solid 1px #cdcdcd;
+}
+
+.footer p {
+  text-align: center;
+  padding: 22px;
+  margin: 0;
 }

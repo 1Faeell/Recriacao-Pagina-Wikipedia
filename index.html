@@ -1,44 +1,546 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invincible - Wikipage</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_book"
+    />
+  </head>
+  <body>
+    <!-- Área de Navegação Principal -->
+    <header>
+      <div class="logo" aria-label="Logo da Wikipage">
+        <a href="#"
+          ><span
+            id="icone-logo"
+            class="material-symbols-outlined"
+            aria-hidden="true"
+          >
+            menu_book
+          </span>
+          <div class="logo-text">Wikipage</div>
+        </a>
+      </div>
+      <!-- Campo de Busca -->
+      <div class="search" role="search" aria-label="Barra de Pesquisa">
+        <input
+          type="text"
+          placeholder="Pesquisar na Wikipage"
+          aria-label="Pesquisar na Wikipage"
+          role="textbox"
+        />
+        <button type="submit" role="button" aria-label="Buscar na Wikipage">
+          Buscar
+        </button>
+      </div>
+    </header>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
+    <!-- Título da página -->
+    <div class="bar" role="banner" aria-label="Título da Página">
+      <h1>Invincible</h1>
     </div>
 
-    <div class="bar"></div>
+    <!-- Conteúdo Principal -->
+    <div class="content" role="main" aria-label="Conteúdo Principal">
+      <!-- Barra Lateral de Navegação -->
+      <aside
+        class="sidebar"
+        role="navigation"
+        aria-label="Barra Lateral de Navegação"
+      >
+        <!-- Links de Navegação -->
+        <h2>Conteúdo</h2>
+        <ul>
+          <li><a href="#sobre">Sobre a Série</a></li>
+          <li><a href="#sinopse">Sinopse</a></li>
+          <li>
+            <a href="#origem-desenvolvimento">Origem e Desenvolvimento</a>
+          </li>
+          <li><a href="#personagens">Personagens Principais</a></li>
+          <li><a href="#temas">Temas Abordados</a></li>
+          <li><a href="#recepcao">Recepção e Impacto Cultural</a></li>
+          <li><a href="#tecnicos">Detalhes Técnicos</a></li>
+          <li><a href="#consideracoes">Considerações Finais</a></li>
+        </ul>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+        <!-- <aside class="anchors" role="complementary" aria-label="Links Úteis"> -->
+        <h2>Neste Artigo</h2>
+        <ul>
+          <li><a href="#sinopse">📃 Sinopse Rápida</a></li>
+          <li><a href="#personagens">👥 Personagens em Destaque</a></li>
+          <li><a href="#tecnicos">📺 Detalhes Técnicos</a></li>
+          <li>
+            <a
+              href="https://www.imdb.com/title/tt6741278/"
+              target="_blank"
+              aria-label="Ver no IMDb"
+              rel="noopener noreferrer"
+              id="link-imdb"
+              >🌐 Ver no IMDb</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.primevideo.com/detail/0KRGHGZCAFDKILKOB8UP8VV8QI"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Assistir na Amazon Prime Video"
+              id="link-amazon"
+              >▶️ Assistir na Amazon Prime Video</a
+            >
+          </li>
+        </ul>
+        <!-- </aside> -->
+      </aside>
 
-        <div class="main">
-            
-        </div>
+      <!-- Área Principal do Conteúdo -->
+      <main class="main" aria-label="Artigo Principal">
+        <article>
+          <!-- Seção Sobre a Série -->
+          <section id="sobre">
+            <!-- <h1>Invincible</h1> -->
+            <div class="p-img-sobre">
+              <div class="paragrafo-sobre" aria-label="Parágrafo Sobre a Série">
+                <h2>Sobre</h2>
+                <p>
+                  "Invincible" é uma série animada de super-heróis baseada nos
+                  quadrinhos de mesmo nome criados por Robert Kirkman, também
+                  conhecido por "The Walking Dead". Lançada em 2021 pela Amazon
+                  Prime Video, a série mistura ação, drama e violência gráfica,
+                  com uma trama cheia de reviravoltas.
+                </p>
+                <p>
+                  Invincible (bra/por: Invencível) é uma série animada de
+                  televisão norte americana de super-herói destinada ao público
+                  adulto, baseada no personagem Mark Grayson da revista em
+                  quadrinhos de mesmo nome criada por Robert Kirkman, que
+                  estreou no serviço de vídeo sob demanda Amazon Prime Video em
+                  março de 2021, com as vozes de Steven Yeun, Sandra Oh e JK
+                  Simmons, sobre a vida um adolescente normal, filho do
+                  super-herói mais poderoso do planeta, que próximo a juventude
+                  desenvolve poderes e passa a ser tutelado pelo pai.
+                </p>
+                <p>
+                  A série é conhecida por sua abordagem madura e realista do
+                  gênero super-heróis, apresentando cenas de ação intensas e
+                  temas complexos. A animação é vibrante e os personagens são
+                  bem desenvolvidos, com histórias que exploram suas motivações
+                  e dilemas morais.
+                </p>
+                <img
+                  src="./assets/images/invincible-capa.jpg"
+                  alt=" Invincible"
+                  aria-label="Imagem de Invincible"
+                  loading="lazy"
+                  width="100%"
+                />
+              </div>
+              <!-- Figura Sobre a Série -->
+              <figure
+                class="figure-sobre"
+                role="region"
+                aria-label="Figura Sobre a Série"
+              >
+                <h3>Invincible</h3>
+                <img
+                  class="img-sobre"
+                  src="/assets/images/invincible.jpeg"
+                  alt="Invincible"
+                  aria-label="Imagem de Invincible"
+                  loading="lazy"
+                />
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
+                <figcaption>
+                  <h4>Informações Gerais</h4>
+                  <div id="info">
+                    <p><strong>Título Original:</strong> Invincible</p>
+                    <p><strong>Formato:</strong> Série de desenho animado</p>
+                    <p><strong>Criador:</strong> Robert Kirkman</p>
+                    <p>
+                      <strong>Créditos:</strong> Robert Kirkman, Cory Walker,
+                      Ryan Ottley
+                    </p>
+                    <p><strong>País de Origem:</strong> Estados Unidos</p>
+
+                    <p><strong>Idioma Original:</strong> Inglês</p>
+                    <p>
+                      <strong>Data de Criação:</strong> 8 de janeiro de 2003
+                    </p>
+
+                    <p>
+                      <strong>Lançamento da Série:</strong> 26 de março de 2021
+                    </p>
+                    <p><strong>Produtor:</strong> Maude Lewis</p>
+                    <p>
+                      <strong>Gênero:</strong> Ação, Drama, Animação, Ficção
+                      Científica
+                    </p>
+                    <p>
+                      <strong>Classificação:</strong> +18 (violência extrema e
+                      temas maduros)
+                    </p>
+                    <p><strong>Plataforma:</strong> Amazon Prime Video</p>
+                    <p>
+                      <strong>Empresas Produtoras:</strong> Skybound
+                      Entertainment, Amazon Studios, Point Grey Pictures
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- Seções do Artigo -->
+          <!-- Sinopse -->
+          <section id="sinopse" role="region" aria-label="Sinopse Rápida">
+            <h2>Sinopse</h2>
+            <p>
+              A história segue Mark Grayson, um adolescente comum que descobre
+              que herdou os poderes de seu pai, Omni-Man. À medida que Mark
+              tenta equilibrar sua vida normal com suas novas habilidades, ele
+              enfrenta desafios que o forçam a se tornar o herói que nasceu para
+              ser.
+            </p>
+            <p>
+              No entanto, a série rapidamente revela que nem tudo é o que
+              parece, e Mark deve confrontar verdades sombrias sobre seu pai e o
+              mundo dos super-heróis.
+            </p>
+            <p>
+              A trama se desenrola com Mark aprendendo a usar seus poderes,
+              enfrentando vilões e lidando com as consequências de suas ações,
+              enquanto descobre mais sobre o legado de seu pai e o que significa
+              ser um herói.
+            </p>
+          </section>
+
+          <!-- Origem e Desenvolvimento -->
+          <section
+            id="origem-desenvolvimento"
+            aria-label="Origem e Desenvolvimento"
+            role="region"
+          >
+            <h2>Origem e Desenvolvimento</h2>
+            <p>
+              A série de quadrinhos "Invincible" foi lançada em 2003 e
+              finalizada em 2018, totalizando 144 edições. Robert Kirkman,
+              também criador de "The Walking Dead", idealizou a obra como uma
+              releitura e desconstrução do gênero de super-heróis. O foco da
+              narrativa sempre esteve na evolução pessoal, psicológica e moral
+              do protagonista, bem como nas consequências reais e muitas vezes
+              brutais da vida de um herói.
+            </p>
+            <p>
+              A adaptação animada foi anunciada em 2018, com o objetivo de ser
+              fiel ao material original, mantendo tanto o tom adulto quanto as
+              principais linhas narrativas.
+            </p>
+          </section>
+
+          <!-- Personagens Principais -->
+          <section
+            id="personagens"
+            role="region"
+            aria-label="Personagens Principais"
+          >
+            <h2>Personagens Principais</h2>
+            <article>
+              <h3>Mark Grayson / <em>Invincible</em></h3>
+              <img src="./assets/images/mark.jpg" alt="Mark Grayson" />
+              <p>
+                <strong>Quem é:</strong> Protagonista da série, adolescente que
+                herda os poderes do pai.
+              </p>
+              <p>
+                <strong>Poderes:</strong> Superforça, voo, supervelocidade,
+                fator de cura e resistência sobre-humana.
+              </p>
+              <p>
+                <strong>Personalidade:</strong> Ingênuo no começo, vai
+                amadurecendo ao longo da história.
+              </p>
+              <p>
+                <strong>Evolução:</strong> Percebe que ser herói é mais brutal e
+                complexo do que parece.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Nolan Grayson / <em>Omni-Man</em></h3>
+              <img src="./assets/images/omni-man.jpeg" alt="Nolan Grayson" />
+              <p>
+                <strong>Quem é:</strong> Pai do Mark. Um dos seres mais
+                poderosos da Terra, com segredos sombrios.
+              </p>
+              <p>
+                <strong>Raça:</strong> Viltrumita (raça alienígena
+                conquistadora).
+              </p>
+              <p>
+                <strong>Poderes:</strong> Superforça, voo, invulnerabilidade,
+                sentidos aguçados, fator de cura avançado.
+              </p>
+              <p>
+                <strong>Personalidade:</strong> Calculista e frio, mas com
+                dilemas internos em relação ao filho.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Debbie Grayson</h3>
+              <img src="./assets/images/debbie.jpeg" alt="Debbie Grayson" />
+              <p>
+                <strong>Quem é:</strong> Mãe do Mark e esposa do Nolan. Humana
+                sem poderes.
+              </p>
+              <p>
+                <strong>Importância:</strong> Representa o lado emocional e
+                humano da história.
+              </p>
+              <p>
+                <strong>Destaque:</strong> Forte emocionalmente, mesmo diante de
+                grandes traições.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Atom Eve (Samantha Eve Wilkins)</h3>
+              <img src="./assets/images/atom-eve.jpg" alt="Atom Eve" />
+              <p>
+                <strong>Quem é:</strong> Colega e depois interesse amoroso do
+                Mark.
+              </p>
+              <p>
+                <strong>Poderes:</strong> Manipulação de matéria e energia em
+                nível atômico.
+              </p>
+              <p>
+                <strong>Personalidade:</strong> Independente, inteligente, com
+                senso forte de justiça.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Cecil Stedman</h3>
+              <img src="./assets/images/cecil.jpeg" alt="Cecil Stedman" />
+              <p>
+                <strong>Quem é:</strong> Diretor da Agência de Defesa Global
+                (GDA).
+              </p>
+              <p>
+                <strong>Função:</strong> Controla os heróis e lida com ameaças
+                globais.
+              </p>
+              <p>
+                <strong>Personalidade:</strong> Frio, calculista e estratégico.
+                Faz o que for necessário pelo planeta.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Robot (Rudy Connors)</h3>
+              <img src="./assets/images/robot-rudy.webp" alt="Robot" />
+              <p>
+                <strong>Quem é:</strong> Líder tático dos Guardiões do Globo
+                (nova formação).
+              </p>
+              <p>
+                <strong>Segredo:</strong> O "robot" é controlado por um humano
+                com corpo debilitado.
+              </p>
+              <p>
+                <strong>Evolução:</strong> Levanta questionamentos éticos sobre
+                identidade e moralidade.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Guardians of the Globe (Guardiões do Globo)</h3>
+              <div class="gda">
+                <!-- <strong>1° Guardiões do Globo</strong> -->
+
+                <img
+                  src="./assets/images/gda-1.avif"
+                  alt="Guardians of the Globe"
+                />
+
+                <!-- <strong>2° Guardiões do Globo</strong>
+              <img
+                src="./assets/images/gda-2.avif"
+                alt="Nova formação dos Guardiões do Globo"
+              /> -->
+              </div>
+              <p>
+                <strong>Quem são:</strong> Equipe de heróis que lembra a Liga da
+                Justiça.
+              </p>
+              <p>
+                <strong>Membros iniciais:</strong> War Woman, Darkwing, Red
+                Rush, Green Ghost, Aquarius, Martian Man.
+              </p>
+              <p>
+                <strong>Nova formação:</strong> Rex Splode, Dupli-Kate, Monster
+                Girl, Black Samson e Robot.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Allen the Alien</h3>
+              <img src="./assets/images/allen.jpg" alt="Allen the Alien" />
+              <p>
+                <strong>Quem é:</strong> Alienígena fortão e camarada. Trabalha
+                pra Coalizão de Planetas.
+              </p>
+              <p>
+                <strong>Poderes:</strong> Superforça, regeneração, resistência
+                elevada.
+              </p>
+              <p>
+                <strong>Papel na trama:</strong> Ajuda Mark a entender o
+                universo e os Viltrumitas.
+              </p>
+            </article>
+
+            <br />
+
+            <article>
+              <h3>Outros personagens importantes</h3>
+              <p><strong>Rex Splode:</strong> Explode objetos com o toque.</p>
+              <p>
+                <strong>Dupli-Kate:</strong> Cria múltiplos clones de si mesma.
+              </p>
+              <p>
+                <strong>Monster Girl:</strong> Se transforma num monstro
+                superforte, mas rejuvenesce a cada transformação.
+              </p>
+              <p>
+                <strong>Damien Darkblood:</strong> Demônio detetive que
+                investiga mistérios sobrenaturais.
+              </p>
+            </article>
+          </section>
+
+          <!-- Temas Abordados -->
+          <section id="temas" role="region" aria-label="Temas Abordados">
+            <h2>Temas Abordados</h2>
+            <p>
+              A série discute moralidade, responsabilidade com o poder,
+              conflitos familiares e o verdadeiro significado de ser um herói.
+              Não foge de mostrar os impactos reais das batalhas, incluindo
+              perdas humanas e consequências psicológicas.
+            </p>
+          </section>
+
+          <!-- Recepção e Impacto Cultural -->
+          <section
+            id="recepcao"
+            role="region"
+            aria-label="Recepção e Impacto Cultural"
+          >
+            <h2>Recepção e Impacto Cultural</h2>
+            <p>
+              Desde seu lançamento, "Invincible" recebeu ampla aclamação da
+              crítica especializada e do público. Os elogios concentram-se
+              especialmente no roteiro envolvente, na complexidade dos
+              personagens e na capacidade da série de subverter as expectativas
+              tradicionais do gênero super-heroico.
+            </p>
+            <p>
+              Além disso, a série tornou-se um fenômeno nas redes sociais, com
+              várias cenas se tornando virais, principalmente o embate entre
+              Mark e Omni-Man no episódio final da primeira temporada.
+            </p>
+            <p>
+              Com o sucesso, a Amazon confirmou novas temporadas, consolidando a
+              série como uma das principais produções de animação adulta da
+              plataforma.
+            </p>
+          </section>
+
+          <!-- Detalhes Técnicos -->
+          <section id="tecnicos" role="region" aria-label="Detalhes Técnicos">
+            <h2>Detalhes Técnicos</h2>
+            <p>
+              A animação é feita em estilo 2D, com cores vibrantes e um design
+              de personagens que lembra os quadrinhos originais. A trilha sonora
+              é impactante, complementando as cenas de ação e drama.
+            </p>
+            <p>
+              A série foi bem recebida pela crítica e pelo público, elogiada por
+              sua narrativa envolvente e pela forma como subverte as
+              expectativas do gênero super-heróis.
+            </p>
+          </section>
+
+          <!-- Considerações Finais -->
+          <section
+            id="consideracoes"
+            role="region"
+            aria-label="Considerações Finais"
+          >
+            <h2>Considerações Finais</h2>
+            <p>
+              "Invincible" é uma obra que surpreende não apenas pelos seus
+              elementos visuais, mas também pela profundidade narrativa. Uma
+              verdadeira desconstrução do gênero super-heróis, que mistura
+              momentos de humor com cenas brutalmente realistas.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <!-- Barra Lateral de Links Úteis -->
+      <!-- <aside class="anchors" role="complementary" aria-label="Links Úteis">
+        <h2>Neste Artigo</h2>
+        <ul>
+          <li><a href="#sinopse">📃 Sinopse Rápida</a></li>
+          <li><a href="#personagens">👥 Personagens em Destaque</a></li>
+          <li><a href="#tecnicos">📺 Detalhes Técnicos</a></li>
+          <li>
+            <a
+              href="https://www.imdb.com/title/tt6741278/"
+              target="_blank"
+              aria-label="Ver no IMDb"
+              rel="noopener noreferrer"
+              >🌐 Ver no IMDb</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.primevideo.com/detail/0KRGHGZCAFDKILKOB8UP8VV8QI"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Assistir na Amazon Prime Video"
+              >▶️ Assistir na Amazon Prime Video</a
+            >
+          </li>
+        </ul>
+      </aside> -->
     </div>
 
-    <div class="footer">
-
-    </div>
-</body>
+    <!-- Rodapé -->
+    <footer class="footer">
+      <p>&copy; 2025 Wikipage Invincible - Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
